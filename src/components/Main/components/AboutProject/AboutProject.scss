@@ -1,0 +1,147 @@
+.about-project
+{
+    margin-right: 50px;
+    margin-left: 50px;
+
+    &__container
+    {
+        display: flex;
+
+        padding: 110px 0;
+
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @media(max-width: 1023px){
+            padding: 90px 0;
+        }
+
+        @media(max-width: 767px){
+            padding: 70px 0;
+        }
+    }
+
+    &__text
+    {
+        width: calc(50% - 15px);
+        max-width: 550px;
+        padding: 70px 0 0;
+
+        @media(max-width: 767px){
+            width: 100%;
+            padding: 60px 0 0;
+        }
+    }
+}
+
+.text
+{
+    font-size: 14px;
+    line-height: 20px;
+
+    margin: 0;
+
+    color: #fff;
+
+    @media(max-width: 767px){
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    &__title
+    {
+        font-size: 20px;
+        font-weight: normal;
+        line-height: 24px;
+
+        margin: 0 0 26px;
+
+        letter-spacing: -.04em;
+
+        @media(max-width: 767px){
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+}
+
+
+.line
+{
+    display: flex;
+
+    width: 100%;
+    padding: 110px 0 31px;
+
+    @media(max-width: 767px){
+        padding: 60px 0 23px;
+    }
+
+    &__part
+    {
+        font-size: 14px;
+        line-height: 17px;
+
+        position: relative;
+
+        display: flex;
+
+        height: 36px;
+
+        text-align: center;
+
+        align-items: center;
+        justify-content: center;
+
+        @media(max-width: 767px){
+            font-size: 11px;
+            line-height: 13px;
+        }
+
+        &::after
+        {
+            position: absolute;
+            bottom: -31px;
+    
+            color: #8b8b8b;
+
+            @media(max-width: 767px){
+                bottom: -23px;
+            }
+        }
+
+        &_backend
+        {
+            width: 20%;
+    
+            color: #000;
+            background-color: #3ddc84;
+
+            @media(max-width: 767px){
+                width: 35%;
+            }
+    
+            &::after
+            {
+                content: 'Back-end';
+            }
+        }
+
+        &_frontend
+        {
+            width: 80%;
+
+            color: #fff;
+            background-color: #303030;
+
+            @media(max-width: 767px){
+                width: 65%;
+            }
+
+            &::after
+            {
+                content: 'Front-end';
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.alert
+{
+    position: fixed;
+    right: 2%;
+    bottom: 3%;
+    pointer-events: none;
+    background-color: #272727;
+    padding: 7px 13px;
+    border-radius: 3px;
+    animation-name: appearance;
+    animation-duration: 1.6s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes appearance
+{
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,20 @@
+.title
+{
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 27px;
+
+    width: 100%;
+    margin: 0;
+    padding: 0 0 23px;
+
+    letter-spacing: -.04em;
+
+    color: #fff;
+    border-bottom: 1px solid #dadada;
+
+    @media(max-width: 767px){
+        font-size: 18px;
+        line-height: 22px;
+    }
+}

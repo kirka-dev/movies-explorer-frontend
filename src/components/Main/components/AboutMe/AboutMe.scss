@@ -1,0 +1,171 @@
+.about-me
+{
+    margin-right: 50px;
+    margin-left: 50px;
+
+    &__container
+    {
+        display: flex;
+
+        padding: 110px 0 100px;
+
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        @media(max-width: 1023px){
+            padding: 90px 0;
+        }
+
+        @media(max-width: 767px){
+            padding: 70px 0;
+        }
+    }
+
+    &__title
+    {
+        margin-bottom: 66px;
+
+        @media(max-width: 767px){
+            margin-bottom: 60px;
+        }
+    }
+
+    &__info
+    {
+        max-width: 590px;
+
+        @media(max-width: 1023px){
+            max-width: 350px;
+        }
+
+        @media(max-width: 767px){
+            order: 2;
+        }
+    }
+
+    &__name
+    {
+        font-size: 50px;
+        font-weight: normal;
+        line-height: 58px;
+
+        margin: 0 0 18px;
+
+        letter-spacing: -.04em;
+
+        color: #fff;
+
+        @media(max-width: 1023px){
+            font-size: 40px;
+            line-height: 40px;
+
+            margin: 0 0 16px;
+        }
+
+        @media(max-width: 767px){
+            font-size: 30px;
+            line-height: 36px;
+        }
+    }
+
+    &__profession
+    {
+        font-size: 18px;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 20px;
+
+        margin: 0 0 26px;
+
+        color: #fff;
+
+        @media(max-width: 1023px){
+            font-size: 12px;
+            line-height: 18px;
+
+            margin: 0 0 20px;
+        }
+
+        @media(max-width: 767px){
+            font-size: 11px;
+            line-height: 16px;
+        }
+    }
+
+    &__story
+    {
+        font-size: 14px;
+        line-height: 22px;
+
+        margin: 0;
+
+        color: #fff;
+
+        @media(max-width: 1023px){
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        @media(max-width: 767px){
+            font-size: 11px;
+            line-height: 16px;
+        }
+    }
+
+    &__links
+    {
+        display: flex;
+
+        margin: 100px 0 0;
+        padding: 0;
+
+        list-style: none;
+
+        @media(max-width: 767px){
+            margin: 40px 0 0;
+        }
+    }
+
+    &__photo
+    {
+        border-radius: 10px;
+
+        @media(max-width: 1023px){
+            max-width: 255px;
+        }
+
+        @media(max-width: 767px){
+            order: 1;
+
+            max-width: 100%;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.links {
+    &__link
+    {
+        font-size: 14px;
+        line-height: 17px;
+    
+        margin-left: 20px;
+    
+        text-align: right;
+        text-decoration: none;
+    
+        color: #fff;
+    }
+    
+    &__link:first-child
+    {
+        margin-left: 0;
+    }
+    
+    &__link:hover
+    {
+        text-decoration: underline;
+    }
+}
+

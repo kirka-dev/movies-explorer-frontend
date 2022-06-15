@@ -1,0 +1,10 @@
+.saved-movies
+{
+    margin-right: 50px;
+    margin-left: 50px;
+
+    @media(max-width: 767px){
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}

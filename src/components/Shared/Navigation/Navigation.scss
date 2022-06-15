@@ -1,0 +1,25 @@
+.navigation__link
+{
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 18px;
+
+    margin-right: 20px;
+
+    transition: .2s;
+    text-decoration: none;
+
+    color: #fff;
+
+    &:last-child
+    {
+        margin-right: 0;
+    }
+
+    &:hover{
+        transition: .2s;
+
+        opacity: .5;
+    }
+}

@@ -1,0 +1,42 @@
+.movies
+{
+    margin-right: 50px;
+    margin-left: 50px;
+
+    @media(max-width: 767px){
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    &__more-button
+    {
+        transition: .2s;
+
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 15px;
+    
+        display: block;
+    
+        width: 100%;
+        max-width: 320px;
+        height: 36px;
+        margin: 50px auto 80px;
+        padding: 0;
+    
+        color: #fff;
+        border: none;
+        border: solid 1px #424242;
+        border-radius: 5px;
+        background: initial;
+
+        &:hover
+        {
+            transition: .2s;
+
+            cursor: pointer;
+
+            background-color: #222;
+        }
+    }    
+}

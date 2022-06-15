@@ -1,0 +1,135 @@
+.search
+{
+    display: grid;
+
+    padding: 48px 0 50px;
+
+    &__search-form
+    {
+        margin-bottom: 48px;
+    }
+}
+
+
+.search-form
+{
+    position: relative;
+
+    &__icon
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: block;
+
+        width: 32px;
+        height: 32px;
+
+        border: solid 1px #424242;
+        border-radius: 100%;
+        background-image: url('../../../images/search.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media(max-width: 767px){
+            display: none;
+        }
+    }
+
+    &__input
+    {
+        font-size: 28px;
+        line-height: 34px;
+    
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0;
+        padding: 0 75px 15px;
+    
+        text-align: center;
+    
+        color: #fff;
+        border: none;
+        border-bottom: solid 1px #424242;
+        outline: none;
+        background: initial;
+
+        &:focus
+        {
+            border-color: #4285f4;
+        }
+
+        @media(max-width: 767px){
+            font-size: 18px;
+            line-height: 22px;
+
+            padding: 5px 50px 15px 0;
+
+            text-align: left;
+        }
+
+        &::placeholder
+        {
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 34px;
+
+            text-align: center;
+
+            color: #8b8b8b;
+
+            @media(max-width: 767px){
+                font-size: 18px;
+                line-height: 22px;
+    
+                text-align: left;
+            }
+        }
+    }
+
+    &__submit
+    {
+        transition: .2s;
+        
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        width: 34px;
+        height: 34px;
+
+        border: none;
+        border-radius: 100%;
+        outline: none;
+        background-color: #4285f4;
+        background-image: url('../../../images/chevron.svg');
+        background-repeat: no-repeat;
+        background-position: center right 43%;
+
+        &:hover
+        {
+            transition: .2s;
+
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+
+        &:disabled
+        {
+            opacity: .5;
+            cursor: default;
+        }
+    }
+
+    &__error
+    {
+        width: 100%;
+        text-align: center;
+        font-size: 10px;
+        line-height: 12px;
+        position: absolute;
+        bottom: -30px;
+        color: #8b8b8b;
+    }
+}

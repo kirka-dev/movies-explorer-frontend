@@ -1,0 +1,24 @@
+.header
+{
+    margin-left: 50px;
+    margin-right: 50px;
+
+    &__container
+    {
+        display: flex;
+    
+        height: 74px;
+    
+        align-items: center;
+    }
+    
+    &__logotype
+    {
+        margin-right: auto;
+    }
+    
+    &__navigation
+    {
+        margin-right: 50px;
+    }
+}

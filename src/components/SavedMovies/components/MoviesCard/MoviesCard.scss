@@ -1,0 +1,67 @@
+.movies-card
+{
+    overflow: hidden;
+
+    border-radius: 10px;
+    background: #222;
+    box-shadow: 0 16px 24px rgba(0, 0, 0, .05);
+
+    &__thumbnail
+    {
+        width: 100%;
+        height: 151px;
+
+        object-fit: cover;
+        object-position: center;
+    }
+
+    @media(max-width: 600px){
+        max-width: 300px;
+    }
+}
+
+.info
+{
+    box-sizing: border-box;
+    padding: 14px 12px;
+
+    &__name
+    {
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 16px;
+    
+        margin: 0;
+        padding-bottom: 10px;
+    
+        color: #fff;
+    }
+    
+    &__duration
+    {
+        font-size: 11px;
+        line-height: 13px;
+    
+        margin: 0;
+    
+        color: #8b8b8b;
+    }
+
+    &__delete-button
+    {
+        width: 16px;
+        height: 16px;
+
+        border: none;
+        outline: none;
+        background-color: initial;
+        background-image: url('../../../../images/times.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &:hover
+        {
+            cursor: pointer;
+        }
+    }
+}

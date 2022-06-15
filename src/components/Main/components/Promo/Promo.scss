@@ -1,0 +1,52 @@
+.promo
+{
+    margin: 20px 20px 0;
+
+    @media(max-width: 767px){
+        margin: 14px 14px 0;
+    }
+
+    &__container
+    {
+        display: grid;
+    
+        min-height: 430px;
+        padding: 30px;
+    
+        border-radius: 10px;
+        background: #272727;
+    
+        grid-template-rows: 1fr min-content;
+
+        @media(max-width: 767px){
+            padding: 20px 4px;
+        }
+    }    
+    
+    &__title
+    {
+        font-size: 50px;
+        font-weight: normal;
+        line-height: 58px;
+    
+        max-width: 730px;
+        margin: auto;
+    
+        text-align: center;
+        letter-spacing: -.04em;
+    
+        color: #fff;
+
+        @media(max-width: 1023px){
+            font-size: 40px;
+            line-height: 52px;
+        }
+
+        @media(max-width: 767px){
+            font-size: 29px;
+            line-height: 37px;
+
+            max-width: 292px;
+        }
+    }    
+}
